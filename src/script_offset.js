@@ -6,7 +6,7 @@ export const options = {
  summaryTrendStats: ["avg"],
 };
 
-const config = JSON.parse(open("config.json"));
+const config = JSON.parse(open("../config.json"));
 
 export default function () {
  http.get(
