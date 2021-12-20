@@ -1,0 +1,8 @@
+{
+ "endpoint": "http://localhost/v1",
+ "projectId": "benchmark",
+ "mariadbHost": "localhost",
+ "mariadbPost": "3306",
+ "mariadbUser": "root",
+ "mariadbPassword": ""
+}
