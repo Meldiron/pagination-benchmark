@@ -12,7 +12,7 @@ const timeStart = Date.now();
   port: config.mariadbPost,
   user: config.mariadbUser,
   password: config.mariadbPassword,
-  database: `project_${config.projectId}_external`,
+  database: `appwrite`,
  });
 
  const promises = [];
@@ -29,9 +29,9 @@ const timeStart = Date.now();
    index++;
   }
 
-  const query = `INSERT INTO posts (_uid, _read, _write) VALUES ${queryValues.join(
-   ", "
-  )}`;
+  const query = `INSERT INTO _project_${
+   config.projectId
+  }_posts (_uid, _read, _write) VALUES ${queryValues.join(", ")}`;
   promises.push(connection.execute(query));
  }
 
