@@ -31,7 +31,7 @@ const timeStart = Date.now();
 
   const query = `INSERT INTO _project_${
    config.projectId
-  }_posts (_uid, _read, _write) VALUES ${queryValues.join(", ")}`;
+  }_collection_posts (_uid, _read, _write) VALUES ${queryValues.join(", ")}`;
   promises.push(connection.execute(query));
  }
 
